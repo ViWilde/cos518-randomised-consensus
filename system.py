@@ -1,10 +1,12 @@
 import random
-from server import Server
-from network import Network
+from server import EvilServer, IdiotServer, RandomServer, Server
+from network import *
 
 
 class System:
-    def __init__(self, n, f, network, val_generator, scheduler) -> None:
+    def __init__(
+        self, n, f, network, val_generator, scheduler, evil_constructor
+    ) -> None:
         assert 5 * f < n  # Threshold for correctness guarantee
         self.step_count = 0
         self.n = n
@@ -13,45 +15,43 @@ class System:
         self.servers = [0] * n
         self.val_generator = val_generator  # generate values for servers; a mapping from [n] -> (space of possible vals)
         self.scheduler = scheduler  # scheduler - a function from a step count c (and the server count n) to telling you which server you should run on that step. So mapping N x n -> [n]
+
+        # Hacks FIXME
+        self.evil_constructor = evil_constructor  # A constructor for evil servers
+
         self.spawn_servers()
         self.print_state()
-        return
 
     def print_state(self):
         print([s.x for s in self.servers])
 
     def run_undistributed(self, cutoff=0):
         while not (self.is_completed() or (cutoff and self.step_count >= cutoff)):
-            print(self.step_count)
+            # print(self.step_count)
             self.step_count += 1
             next_server = self.scheduler(self.step_count, self.n)
             self.servers[next_server].primitive_step()
-            print(self.servers[next_server].state)
+            # print(self.servers[next_server].state)
 
         if self.verify_consensus():
             print(
                 f"""
 Consensus Achieved!
 Total steps: {self.step_count}
-Total messages passed: {self.total_messages()}"""
+Total messages passed: {self.total_messages()}
+                """
             )
         elif cutoff and self.step_count >= cutoff:
             print(f"Failed: Reached cutoff {cutoff}")
         else:
             self.print_state()
-        # TODO: test - validate consensus is actually consensus
-
-    def run_distributed_system(self):
-        # This is the main loop, and the bit where the actual concurrency code goes.
-        # TODO
-        pass
 
     def spawn_servers(self):
         self.evil_ids = random.sample(range(self.n), self.f)
         for i in range(self.n):
             if i in self.evil_ids:
                 # spin up a malicious server TODO
-                self.servers[i] = Server(
+                self.servers[i] = self.evil_constructor(
                     self.network, i, self.val_generator(i), self.n, self.f
                 )
 
@@ -88,12 +88,54 @@ Total messages passed: {self.total_messages()}"""
         return self.network.message_count
 
 
-def main():
-    n = 21
+def test_servers():
+    n = 25
+    f = 4  # <1/5
+    cutoff = 10**4
     val_generator = lambda _: random.randint(0, 1)
     scheduler = lambda c, n: c % n  # Step servers in order, nice and easy
-    sys = System(n, 0, Network(n), val_generator, scheduler)
-    sys.run_undistributed(cutoff=1000)
+
+    # Control - all honest
+    sys = System(n, f, Network(n), val_generator, scheduler, Server)
+    sys.run_undistributed(cutoff)
+
+    sys = System(n, f, Network(n), val_generator, scheduler, EvilServer)
+    sys.run_undistributed(cutoff)
+
+    sys = System(n, f, Network(n), val_generator, scheduler, RandomServer)
+    sys.run_undistributed(cutoff)
+
+    sys = System(n, f, Network(n), val_generator, scheduler, IdiotServer)
+    sys.run_undistributed(cutoff)
 
 
-main()
+def test_network():
+    n = 25
+    f = 4  # <1/5
+    cutoff = 10**4
+    val_generator = lambda _: random.randint(0, 1)
+    scheduler = lambda c, n: c % n  # Step servers in order, nice and easy
+
+    # Control - all honest
+    sys = System(n, f, Network(n), val_generator, scheduler, Server)
+    sys.run_undistributed(cutoff)
+
+    sys = System(n, f, SlowNetwork(n), val_generator, scheduler, EvilServer)
+    sys.run_undistributed(cutoff)
+
+    # TODO: Messages don't get processed here, so the list to shuffle gets ever-larger, and the system locks up basically.
+    sys = System(n, f, ShuffleNetwork(n), val_generator, scheduler, RandomServer)
+    sys.run_undistributed(cutoff)
+
+
+    # TODO: This seems to break termination. Understand why.
+    # Hunch: When we see a "wrong phase" message (a Propose when we're looking for Reports, etc.) we should handle them more cleverly, either storing them internally (within the Server instance vars), or somehow not popping them from the network queue (eg: toss them back on at the back somehow, or just have some procedure to peek at messages beyond the front of the queue)
+    sys = System(n, f, InsertNetwork(n), val_generator, scheduler, RandomServer)
+    sys.run_undistributed(cutoff)
+
+
+
+
+
+test_servers()
+test_network()
