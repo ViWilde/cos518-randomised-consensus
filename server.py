@@ -1,6 +1,8 @@
 import random
+
 # from network import Network
 from message import *
+from enum import Enum
 
 
 class UnknownVal:
@@ -21,12 +23,21 @@ def consensus_values(histogram, threshold):
     return [val for (val, count) in histogram.items() if count > threshold / 2]
 
 
+class State(Enum):
+    INIT = 1
+    REPORTS = 2
+    POST_REPORTS = 3
+    PROPOSALS = 4
+    POST_PROPOSALS = 5
+    DONE=6
+
+
 class Server:
     def __init__(self, network, id, val, n, f):
         self.network = network
         self.id = id
         self.val = val
-        self.x = self.val
+        self.x = val
         self.k = 0
         self.final_round = -1  # The round we finished in
         self.n = n
@@ -40,18 +51,80 @@ class Server:
 
         self.done = False
 
+        # Primitive step edition
+        self.state = State.INIT
+        self.seen = set()
+        self.histogram = dict()
+
+        # Hack FIXME
+        self.possible_values = [0, 1]
+
+    def run(self):
+        while True:
+            self.step()
+
+    def read_message(self, msg_type):
+        msg = self.network.poll(self.id)
+        if isinstance(msg, msg_type) and msg.k == self.k and msg.sender not in self.seen:
+            self.seen.add(msg.sender)
+            update_count(self.histogram, msg.val)
+            self.message_log.append(msg)
+
+    def primitive_step(self):
+        if self.state == State.INIT:
+            self.message_log = []
+            self.k += 1
+            self.network.send_to_all(Report(self.id, self.k, self.x))
+            self.state = State.REPORTS
+        elif self.state == State.REPORTS:
+            if len(self.seen) < (self.wait_threshold):
+                self.read_message(Report)
+            else:
+                self.state = State.POST_REPORTS
+        elif self.state == State.POST_REPORTS:
+            agreed = consensus_values(self.histogram, self.strong_agreement_threshold)
+            self.histogram = dict()
+            self.seen = set()
+            # at most one such element
+            # in the non-byzantine version, just n/2 rather than n+f/2
+            if agreed:
+                self.network.send_to_all(Propose(self.id, self.k, agreed[0]))
+            else:
+                self.network.send_to_all((Propose(self.id, self.k, UNKNOWN)))
+            self.state = State.PROPOSALS
+        elif self.state == State.PROPOSALS:
+            if len(self.seen) < (self.wait_threshold):
+                self.read_message(Propose)
+            else:
+                self.state = State.POST_PROPOSALS
+        elif self.state == State.POST_PROPOSALS:
+            self.histogram[UNKNOWN] = 0
+            # We disregard these when choosing values, they're just there to pad numbers and get us to n-f
+            agreed = consensus_values(self.histogram, self.weak_agreement_threshold)
+
+            majority = consensus_values(self.histogram, self.strong_agreement_threshold)
+            if not self.done:
+                if majority:
+                    self.decide(majority[0])
+                elif agreed:
+                    self.x = agreed[0]
+                else:
+                    self.x = random.choice(self.possible_values)
+                self.state = State.INIT
+
     def step(self):
+        self.message_log = []
         self.k += 1
-        self.network.send_all(Report(self.id, self.k, self.x))
+        self.network.send_to_all(Report(self.id, self.k, self.x))
 
         reports = self.wait_for(Report)
         agreed = consensus_values(reports, self.strong_agreement_threshold)
         # at most one such element
         # in the non-byzantine version, just n/2 rather than n+f/2
         if agreed:
-            self.network.send_all(Propose(self.id, self.k, agreed[0]))
+            self.network.send_to_all(Propose(self.id, self.k, agreed[0]))
         else:
-            self.network.send_all((Propose(self.id, self.k, UNKNOWN)))
+            self.network.send_to_all((Propose(self.id, self.k, UNKNOWN)))
 
         proposals = self.wait_for(Propose)
         proposals[UNKNOWN] = 0
@@ -59,13 +132,13 @@ class Server:
         agreed = consensus_values(proposals, self.weak_agreement_threshold)
 
         majority = consensus_values(proposals, self.strong_agreement_threshold)
-
-        if majority:
-            self.decide(majority[0])
-        elif agreed:
-            self.x = agreed[0]
-        else:
-            self.x = random.choice(possible_values)
+        if not self.done:
+            if majority:
+                self.decide(majority[0])
+            elif agreed:
+                self.x = agreed[0]
+            else:
+                self.x = random.choice(self.possible_values)
             # TODO how do we define this set in the general case?
 
     def wait_for(self, msg_type):
@@ -76,6 +149,7 @@ class Server:
             if isinstance(msg, msg_type) and msg.k == self.k and msg.sender not in seen:
                 seen.add(msg.sender)
                 update_count(histogram, msg.val)
+                self.message_log.append(msg)
         return histogram
         # TODO: What if we accidentally eat messages of the wrong type? Can we safely discard them? Probably not. But maybe yes? Game this out.
 
@@ -84,7 +158,3 @@ class Server:
         self.x = v
         self.final_round = self.k
         # We can't quite /halt/ because that complicates things for other servers. So we just set a flag =done=, that can be observed by the system/supervisor/monitoring.
-
-
-
-

@@ -16,4 +16,7 @@ class Network:
 
     def poll(self, dst):
         # Return+Remove a single message (from the front of the queue) addressed to dst
-        return self.queues[dst].pop(0)
+        if self.queues[dst]:
+            return self.queues[dst].pop(0)
+        else:
+            return None # indicates no content
