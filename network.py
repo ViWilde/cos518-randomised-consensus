@@ -3,10 +3,11 @@ import random
 
 class Network:
     # A very basic network class - the idea is that hostile networks implement the same interface but have more complex operations
-    def __init__(self, num_servers):
+    def __init__(self, num_servers, seed=0):
         self.num_servers = num_servers
         self.queues = [[] for _ in range(num_servers)]
         self.message_count = 0
+        self.randomness = random.Random(seed)
 
     def send(self, dst, payload):
         self.message_count += 1
@@ -25,29 +26,29 @@ class Network:
 
 
 class SlowNetwork(Network):
-    def __init__(self, num_servers):
-        self.delay_chance = 0.2  #  TODO should really be a parameter, not magic number
-        super().__init__(num_servers)
+    def __init__(self, num_servers, seed, *args, **kwargs):
+        self.delay_chance = kwargs.get('delay_chance',0.5)  #  TODO should really be a parameter, not magic number
+        super().__init__(num_servers, seed)
 
     def poll(self, dst):
-        if random.random() < self.delay_chance:
+        if self.randomness.random() < self.delay_chance:
             # message delayed
             return None
         else:
             return super().poll(dst)
 
 
-class ShuffleNetwork(Network):
+class ShuffleNetwork(SlowNetwork):
     def send(self, dst, payload):
         super().send(dst, payload)
-        random.shuffle(self.queues[dst])
+        self.randomness.shuffle(self.queues[dst])
 
-class InsertNetwork(Network):
+
+class InsertNetwork(SlowNetwork):
     def send(self, dst, payload):
         self.message_count += 1
-        s=self.queues[dst]
+        s = self.queues[dst]
         if len(s):
-            s.insert(random.randint(0, len(s)-1), payload)
+            s.insert(self.randomness.randint(0, len(s) - 1), payload)
         else:
             s.append(payload)
-
