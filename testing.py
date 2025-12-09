@@ -10,12 +10,12 @@ def scientific_notation(i, exp):
 
 
 def json_string(data):
-    return dumps(data, indent=4)
+    return dumps(data, indent=2)
 
 
-n = 26
-f = 5 # <1/5
-cutoff = scientific_notation(1, 4)
+n = 16
+f = 3  # <1/5
+cutoff = scientific_notation(2, 5)
 
 
 # TODO why do random servers cause it to fail?
@@ -27,21 +27,6 @@ cutoff = scientific_notation(1, 4)
 # Question: In the times where they take >cutoff,
 
 
-servers = [
-    Server,
-    EvilServer,
-    RandomServer,
-    SilentServer,
-    UnreliableServer,
-    SemirandomServer,
-]
-
-# networks = [SlowNetwork, ShuffleNetwork, InsertNetwork]
-# networks = [Network, SlowNetwork, InsertNetwork]
-# networks = [Network, SlowNetwork]
-networks = [Network]
-
-
 def honest():
     print("_HonestServer_")
     sys = System(n, f, Network(n), cutoff)
@@ -49,19 +34,34 @@ def honest():
     sys.run_undistributed()
 
 
-def test_server_network(servers, networks, seed):
-    flip_chance = 0.1
+def test_server_network(servers, networks, seed, repeats=1):
+    flip_chance = 0.5
 
     def run_test(server, network):
-        # print(f"_{server.__name__}, {network.__name__}_")
-        sys = EvilHotswapSystem(
-            n, f, network(n, seed), cutoff, seed, evil_class=server, flip_chance=flip_chance
-        )
-        # sys = EvilSystem(n, f, Network(n), seed,evil_class=server)
-        result = sys.run_undistributed()
+        result = dict()
         result["server"] = server.__name__
         result["network"] = network.__name__
-        result["seed"] = seed
+        result["successes"] = 0
+        result["failures"] = 0
+        result["base_seed"] = seed
+        result["dead_messages"] = 0
+        for i in range(repeats):
+            sys = EvilHotswapSystem(
+                n,
+                f,
+                network(n, seed + i),
+                cutoff,
+                seed + i,
+                evil_class=server,
+                flip_chance=flip_chance,
+            )
+            x = sys.run_undistributed()
+            result["dead_messages"] = x["dead_messages"]
+            result["rounds"] = x["rounds"]
+            if x["success"]:
+                result["successes"] = result["successes"] + 1
+            else:
+                result["failures"] = result["failures"] + 1
         return result
 
     results = []
@@ -71,18 +71,34 @@ def test_server_network(servers, networks, seed):
     print(json_string(results))
 
 
-def multitest(num):
-    for i in range(num):
-        seed = random.randint(1, 10000)
-        test_server_network(servers, networks, seed)
+def multitest(num, servers, networks):
+    seed = random.randint(1, 10000)
+    test_server_network(servers, networks, seed, num)
 
+
+servers = [
+    Server,
+    EvilServer,
+    RandomServer,
+    SilentServer,
+    UnreliableServer,
+    SemirandomServer,
+]
+
+networks = [
+    Network,
+    SlowNetwork,
+    InsertNetwork,
+    RandomPollNetwork,
+    ApproximateNetwork,
+]
+
+    # StackNetwork, ShuffleNetwork
 
 seed = int(sys.argv[1]) if len(sys.argv) > 1 else random.randint(0, 1000)
 test_servers = lambda servers: test_server_network(servers, [Network], seed)
 test_networks = lambda networks: test_server_network([Server], networks, seed)
 
-# test_server_network(servers, networks, seed)
-# test_networks(networks)
+test_server_network(servers, [SlowNetwork, ApproximateNetwork], seed, repeats=5)
 
-multitest(25)
-# honest()
+# So. There are 6 servers, 4 networks, so 24 combos. If we run 25 tests via multitest, that's 600 tests.

@@ -35,7 +35,9 @@ class State(Enum):
 
 
 class Server:
-    def __init__(self, network=None, id=None, val=None, n=0, f=0, seed=0, *args, **kwargs):
+    def __init__(
+        self, network=None, id=None, val=None, n=0, f=0, seed=0, *args, **kwargs
+    ):
         # Default args: A hack so that __init__() with no args works
         self.network = network
         self.id = id
@@ -63,6 +65,10 @@ class Server:
         # Hack FIXME
         self.possible_values = [0, 1]
 
+        # debug info:
+        self.dead_messages=0
+        
+
     @classmethod
     def from_server(cls, other):
         # Copy the state+attrs of another server (new server `cls` and old server `other` may have diff subclasses)
@@ -85,6 +91,8 @@ class Server:
             self.seen.add(msg.sender)
             update_count(self.histogram, msg.val)
             self.message_log.append(msg)
+        else:
+            self.dead_messages += 1
 
     def broadcast(self, msg_type, value):
         self.network.send_to_all(msg_type(self.id, self.k, value))
@@ -160,13 +168,11 @@ class Server:
 
 # Faulty servers for stress-tests
 
+
 class SilentServer(Server):
     def broadcast(self, msg_type, value):
         # Fail to broadcast
         pass
-
-    def primitive_step(self):
-        return super().primitive_step()
 
 
 class UnreliableServer(Server):
@@ -179,9 +185,6 @@ class UnreliableServer(Server):
             pass
         else:
             super().broadcast(msg_type, value)
-
-    def primitive_step(self):
-        return super().primitive_step()
 
 
 class SemirandomServer(Server):
@@ -196,14 +199,8 @@ class SemirandomServer(Server):
         else:
             super().broadcast(msg_type, value)
 
-    def primitive_step(self):
-        return super().primitive_step()
-
 
 class EvilServer(Server):
-    def __init__(self, *args):
-        super().__init__(*args)
-
     # We just need to modify the broadcast function; primitive_step takes care of the rest.
     def broadcast(self, msg_type, value):
         v = UNKNOWN
@@ -215,19 +212,15 @@ class EvilServer(Server):
             v = self.random_val()  # Handles UNKNOWN
         super().broadcast(msg_type, v)
 
-    def primitive_step(self):
-        return super().primitive_step()
-
 
 class RandomServer(Server):
     # Idea: Keeps track of state transitions correctly, but broadcasts garbage
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args)
-
     # We just need to modify the broadcast function; primitive_step takes care of the rest.
     def broadcast(self, msg_type, value):
         for i in range(self.n):
             self.network.send(i, msg_type(self.id, self.k, self.random_val()))
 
-    def primitive_step(self):
-        return super().primitive_step()
+
+class UnknownServer(Server):
+    def broadcast(self, msg_type, value):
+        return super().broadcast(msg_type, UNKNOWN)

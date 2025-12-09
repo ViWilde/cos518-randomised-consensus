@@ -1,2 +1,2 @@
 #!/bin/bash
-python testing.py $1|jq '.[]|select(.success==false)'
+python testing.py $1|jq '.[]|select(.failures > 0)'
