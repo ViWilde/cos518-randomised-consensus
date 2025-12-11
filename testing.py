@@ -26,10 +26,10 @@ def json_string(data):
 
 def honest():
     print("Everything Honest")
-    n=6
-    f=1
+    n = 6
+    f = 1
     r = random.Random()
-    sys = System(n, f, Network(n,r), Scheduler(n,r), r, cutoff=1000)
+    sys = System(n, f, Network(n, r), Scheduler(n, r), r, cutoff=1000)
     sys.print_state()
     sys.run_undistributed()
 
@@ -40,9 +40,9 @@ def test_server_network_scheduler(
     flip_chance = 0.5
     n = num_servers
     f = math.ceil(n / 5) - 1
-    cutoff_order=5
-    cutoff = scientific_notation(n, cutoff_order)
-
+    cutoff_order = 5
+    # cutoff = scientific_notation(n, cutoff_order)
+    cutoff = scientific_notation(1, cutoff_order)
 
     def run_test(server, network, scheduler):
         randomness = random.Random(seed)
@@ -68,10 +68,9 @@ def test_server_network_scheduler(
             )
 
             # HACK: Set all to 1 and see if consensus is quick
-            for s in sys.servers:
-                s.val = 1
-                s.x = 1
-            sys.print_state()
+            # for s in sys.servers:
+            #     s.val = 1
+            #     s.x = 1
             x = sys.run_undistributed()
             # Rounds and dead_messages are averaged across repeats
             result["rounds"] += x["rounds"] / repeats
@@ -113,7 +112,8 @@ networks = [
 ]
 
 
-schedulers = [Scheduler, RandomScheduler, RandomRoundScheduler, EvilFirstScheduler]
+schedulers = [Scheduler , RandomRoundScheduler, EvilFirstScheduler]
+# RandomScheduler
 
 
 # StackNetwork, ShuffleNetwork
@@ -122,20 +122,22 @@ seed = int(sys.argv[1]) if len(sys.argv) > 1 else random.randint(0, 1000)
 # test_servers = lambda servers: test_server_network(servers, [Network], seed)
 # test_networks = lambda networks: test_server_network([Server], networks, seed)
 
-# test_server_network_scheduler(servers, networks, schedulers, seed, 6, repeats=1)
+test_server_network_scheduler(servers, networks, schedulers, seed, 6, repeats=1)
 # honest()
 
-test_server_network_scheduler([RandomServer], [Network], [Scheduler], seed=191, num_servers=6, repeats=1)
+# test_server_network_scheduler([RandomServer], [Network], [Scheduler], seed=191, num_servers=6, repeats=1)
 
 # So. There are 6 servers, 4 networks, so 24 combos. If we run 25 tests via multitest, that's 600 tests.
 
-error_case= {
-    "server": "RandomServer",
-    "network": "Network",
-    "scheduler": "Scheduler",
-    "successes": 0,
-    "failures": 1,
-    "seed": 191,
-    "dead_messages": 0,
-    "rounds": 0
-  },
+error_case = (
+    {
+        "server": "RandomServer",
+        "network": "Network",
+        "scheduler": "Scheduler",
+        "successes": 0,
+        "failures": 1,
+        "seed": 191,
+        "dead_messages": 0,
+        "rounds": 0,
+    },
+)

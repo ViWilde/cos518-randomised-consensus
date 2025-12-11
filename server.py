@@ -17,7 +17,7 @@ def update_count(histogram, entry):
     if entry in histogram.keys():
         histogram[entry] += 1
     else:
-        histogram[entry] = 0
+        histogram[entry] = 1
 
 
 def consensus_values(histogram, threshold):
