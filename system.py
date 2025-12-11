@@ -5,16 +5,19 @@ from network import *
 
 class System:
     # The idea is that different systems will reimplement the `run_undistributed` and `spawn_servers` functions in more hostile ways; crashing servers, initialising weird values, etc.
-    def __init__(self, n, f, network, cutoff=0, seed=0, *args, **kwargs) -> None:
+    def __init__(
+        self, n, f, network, scheduler, randomness, cutoff=0, *args, **kwargs
+    ) -> None:
         # assert 5 * f < n  # Threshold for correctness guarantee
         self.step_count = 0
         self.rounds = 0
         self.n = n
         self.f = f
         self.network = network
-        self.servers = [Server()] * n
+        self.scheduler = scheduler
+        self.servers = [None] * n
         self.evil_ids = set()
-        self.randomness = random.Random(seed)
+        self.randomness = randomness
         self.cutoff = cutoff
         # self.val_generator = val_generator  # generate values for servers; a mapping from [n] -> (space of possible vals)
         # self.scheduler = scheduler  # scheduler - a function from a step count c (and the server count n) to telling you which server you should run on that step. So mapping N x n -> [n]
@@ -51,33 +54,34 @@ class System:
                 "steps": self.step_count,
                 "rounds": self.rounds,
                 "messages": self.total_messages(),
-            }
+            }|data
 
     def run_undistributed(self):
         while self.should_keep_running():
-            self.step_count += 1
-            nxt = self.next_server()
-            self.servers[nxt].primitive_step()
-            if self.step_count%self.n == 0:
-                self.rounds += 1
+            if self.step_count % self.n == 0:
                 self.on_new_round()
+            self.step_count += 1
+            nxt = self.scheduler.next_server(self)
+            self.servers[nxt].primitive_step()
         return self.finish()
 
     def spawn_servers(self):
-        self.evil_ids = set(self.randomness.sample(range(self.n), self.f))
+        # self.evil_ids = set(self.randomness.sample(range(self.n), self.f))
+        self.evil_ids = set()
         for i in range(self.n):
             # Only spawn honest servers - later implementations will have trickier behaviour
             self.servers[i] = Server(
-                self.network, i, self.randomness.randint(0, 1), self.n, self.f
+                self.network,
+                i,
+                self.randomness.randint(0, 1),
+                self.n,
+                self.f,
+                self.randomness,
             )
 
-    def next_server(self):
-        return self.step_count % self.n
-        # The scheduler logic
-        # Return the next server that should step
-
     def on_new_round(self):
-        pass
+        self.rounds += 1
+        self.scheduler.on_new_round(self)
 
     def get_honest_ids(self):
         return set(range(self.n)) - self.evil_ids
@@ -127,22 +131,30 @@ class EvilSystem(System):
         for i in range(self.n):
             if i in self.evil_ids:
                 self.servers[i] = self.evil_class(
-                    self.network, i, self.randomness.randint(0, 1), self.n, self.f
+                    self.network,
+                    i,
+                    self.randomness.randint(0, 1),
+                    self.n,
+                    self.f,
+                    self.randomness,
                 )
 
             else:
                 self.servers[i] = Server(
-                    self.network, i, self.randomness.randint(0, 1), self.n, self.f
+                    self.network,
+                    i,
+                    self.randomness.randint(0, 1),
+                    self.n,
+                    self.f,
+                    self.randomness,
                 )
 
 
 class EvilHotswapSystem(EvilSystem):
     # Every time we step a server, we have a `flip_chance` probability to change it from good to evil (or vice versa) , and also of some other server (to maintain balance)
     def __init__(self, *args, **kwargs):
-        self.flip_chance = kwargs.get("flip_chance", 0.5)
         super().__init__(*args, **kwargs)
-        self.permutation = [i for i in range(self.n)]
-        self.randomness.shuffle(self.permutation)
+        self.flip_chance = kwargs.get("flip_chance", 0.5)
 
     def find_flippable(self, options):
         # Pick a server from `options` that is not done (if one exists), and hotswap it with new_constructor
@@ -160,22 +172,8 @@ class EvilHotswapSystem(EvilSystem):
         self.servers[evil_id] = Server.from_server(self.servers[evil_id])
         self.evil_ids.remove(evil_id)
 
-    # def next_server(self):
-    #     i = self.step_count % self.n
-    #     nxt = self.permutation[i]
-    #     if i == 0:
-    #         self.randomness.shuffle(self.permutation)
-    #     return nxt
-
-    # def next_server(self):
-    # Truly random
-    #     return random.randint(0, self.n - 1)
-
-    def next_server(self):
-        # Evil first
-        return self.permutation[self.step_count % self.n]
-
     def on_new_round(self):
+        super().on_new_round()
         if self.randomness.random() < self.flip_chance:
             swaps_this_round = self.randomness.randint(0, self.f)
             for _ in range(swaps_this_round):
@@ -183,5 +181,3 @@ class EvilHotswapSystem(EvilSystem):
                 currently_evil = self.find_flippable(self.get_evil_ids())
                 if currently_evil and currently_good:  # both exist to be flipped
                     self.swap_servers(currently_good, currently_evil)
-                
-        self.permutation = list(self.get_evil_ids()) + list(self.get_honest_ids()) # Scheduler state maintenance

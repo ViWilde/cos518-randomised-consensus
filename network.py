@@ -3,11 +3,11 @@ import random
 
 class Network:
     # A very basic network class - the idea is that hostile networks implement the same interface but have more complex operations
-    def __init__(self, num_servers, seed=0):
+    def __init__(self, num_servers, randomness):
         self.n = num_servers
         self.queues = [[] for _ in range(num_servers)]
         self.message_count = 0
-        self.randomness = random.Random(seed)
+        self.randomness = randomness
 
     def send(self, dst, payload):
         self.message_count += 1
@@ -26,11 +26,11 @@ class Network:
 
 
 class SlowNetwork(Network):
-    def __init__(self, num_servers, seed, *args, **kwargs):
+    def __init__(self, num_servers, randomness, *args, **kwargs):
         self.delay_chance = kwargs.get(
             "delay_chance", 0.5
         )  #  TODO should really be a parameter, not magic number
-        super().__init__(num_servers, seed)
+        super().__init__(num_servers, randomness)
 
     def poll(self, dst):
         if self.randomness.random() < self.delay_chance:
@@ -70,7 +70,7 @@ class ApproximateNetwork(Network):
     def poll(self, dst):
         q = self.queues[dst]
         if len(q):
-            idx = self.randomness.randint(0, min(len(q), self.n//2))
+            idx = self.randomness.randint(0, min(len(q), self.n))
             return q.pop(-1 * idx)
         else:
             return None  # indicates no content

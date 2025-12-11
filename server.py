@@ -36,7 +36,7 @@ class State(Enum):
 
 class Server:
     def __init__(
-        self, network=None, id=None, val=None, n=0, f=0, seed=0, *args, **kwargs
+        self, network=None, id=-1, val=-1, n=0, f=0, randomness=None, *args, **kwargs
     ):
         # Default args: A hack so that __init__() with no args works
         self.network = network
@@ -50,7 +50,7 @@ class Server:
         self.strong_agreement_threshold = (n + f) / 2
         self.weak_agreement_threshold = f + 1
         self.wait_threshold = n - f
-        self.randomness = random.Random(seed)
+        self.randomness = randomness
 
         self.message_log = []
         # For state tracking/history, essentially - track received messages
