@@ -32,7 +32,6 @@ def test_server_network_scheduler(
     n = num_servers
     f = math.ceil(n / 5) - 1
     cutoff_order = 4
-    # cutoff = scientific_notation(n, cutoff_order)
     cutoff = scientific_notation(n, cutoff_order)
 
     def run_test(server, network, scheduler):
@@ -42,13 +41,13 @@ def test_server_network_scheduler(
         result["scheduler"] = scheduler.__name__
         result["successes"] = 0
         result["failures"] = 0
-        result["base_seed"] = seed
-        result["dead_messages"] = 0
+        # result["base_seed"] = seed
+        # result["dead_messages"] = 0
         result["rounds"] = 0
         for i in range(repeats):
             randomness = random.Random(seed + i)
             sys = EvilHotswapSystem(
-            # sys = EvilSystem(
+                # sys = EvilSystem(
                 n,
                 f,
                 network(n, randomness),
@@ -59,14 +58,10 @@ def test_server_network_scheduler(
                 flip_chance=flip_chance,
             )
 
-            # HACK: Set all to 1 and see if consensus is quick
-            # for s in sys.servers:
-            #     s.val = 1
-            #     s.x = 1
             x = sys.run_undistributed()
             # Rounds and dead_messages are averaged across repeats
             result["rounds"] += x["rounds"] / repeats
-            result["dead_messages"] += x["dead_messages"] / repeats
+            # result["dead_messages"] += x["dead_messages"] / repeats
             if x["success"]:
                 result["successes"] = result["successes"] + 1
             else:
@@ -104,20 +99,20 @@ networks = [
     StackNetwork,
 ]
 
-
 schedulers = [Scheduler, RandomRoundScheduler, EvilFirstScheduler]
 
+# A smaller set of behaviours - the "interesting set", informally
+servers_demo = [Server, EvilServer, RandomServer]
+networks_demo = [Network, SlowNetwork, ApproximateNetwork]
+schedulers_demo = [Scheduler, EvilFirstScheduler]
+# 18 options
+
 seed = int(sys.argv[1]) if len(sys.argv) > 1 else random.randint(0, 1000)
-# test_servers = lambda servers: test_server_network(servers, [Network], seed)
-# test_networks = lambda networks: test_server_network([Server], networks, seed)
-
-test_server_network_scheduler(servers, networks, schedulers, seed, 6, repeats=1)
 
 
-# 6 servers, 6 networks, 3 schedulers
-# total: 108 combinations
-# times 5 values of n -> 540
-# times 5 repeats -> ~2500 datapoints
+# A command for running a miniature test
+# test_server_network_scheduler(servers, networks, schedulers, seed, 6, repeats=1)
 
-# for n in [6, 11, 16, 21, 26]:
-#     test_server_network_scheduler(servers, networks, schedulers, seed, n, repeats=5)
+# The command used to generate bigtest.json
+for n in [6, 11, 16, 21, 26]:
+    test_server_network_scheduler(servers, networks, schedulers, seed, n, repeats=5)

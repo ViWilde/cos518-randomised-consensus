@@ -1,0 +1,5427 @@
+[
+  {
+    "n": 6,
+    "results": [
+      {
+        "server": "Server",
+        "network": "Network",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 15.599999999999998,
+        "rounds": 29.599999999999998
+      },
+      {
+        "server": "Server",
+        "network": "Network",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 15.6,
+        "rounds": 29.599999999999998
+      },
+      {
+        "server": "Server",
+        "network": "Network",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 22.8,
+        "rounds": 39.800000000000004
+      },
+      {
+        "server": "Server",
+        "network": "SlowNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 199.4,
+        "rounds": 71.2
+      },
+      {
+        "server": "Server",
+        "network": "SlowNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 166.0,
+        "rounds": 58.8
+      },
+      {
+        "server": "Server",
+        "network": "SlowNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 182.79999999999998,
+        "rounds": 65.2
+      },
+      {
+        "server": "Server",
+        "network": "InsertNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 42.2,
+        "rounds": 76.2
+      },
+      {
+        "server": "Server",
+        "network": "InsertNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 10.4,
+        "rounds": 32.0
+      },
+      {
+        "server": "Server",
+        "network": "InsertNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 13.399999999999999,
+        "rounds": 35.599999999999994
+      },
+      {
+        "server": "Server",
+        "network": "RandomPollNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 16.4,
+        "rounds": 33.0
+      },
+      {
+        "server": "Server",
+        "network": "RandomPollNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 40.6,
+        "rounds": 67.0
+      },
+      {
+        "server": "Server",
+        "network": "RandomPollNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 16.599999999999998,
+        "rounds": 33.0
+      },
+      {
+        "server": "Server",
+        "network": "ApproximateNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 49.8,
+        "rounds": 80.60000000000001
+      },
+      {
+        "server": "Server",
+        "network": "ApproximateNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 42.4,
+        "rounds": 70.4
+      },
+      {
+        "server": "Server",
+        "network": "ApproximateNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 36.2,
+        "rounds": 60.4
+      },
+      {
+        "server": "Server",
+        "network": "StackNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 36.0
+      },
+      {
+        "server": "Server",
+        "network": "StackNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 27.0
+      },
+      {
+        "server": "Server",
+        "network": "StackNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 24.0
+      },
+      {
+        "server": "EvilServer",
+        "network": "Network",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 34.8,
+        "rounds": 56.8
+      },
+      {
+        "server": "EvilServer",
+        "network": "Network",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 25.2,
+        "rounds": 43.2
+      },
+      {
+        "server": "EvilServer",
+        "network": "Network",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 22.8,
+        "rounds": 39.800000000000004
+      },
+      {
+        "server": "EvilServer",
+        "network": "SlowNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 470.99999999999994,
+        "rounds": 164.6
+      },
+      {
+        "server": "EvilServer",
+        "network": "SlowNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 380.79999999999995,
+        "rounds": 131.8
+      },
+      {
+        "server": "EvilServer",
+        "network": "SlowNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 314.40000000000003,
+        "rounds": 110.2
+      },
+      {
+        "server": "EvilServer",
+        "network": "InsertNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 48.6,
+        "rounds": 86.39999999999999
+      },
+      {
+        "server": "EvilServer",
+        "network": "InsertNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 29.2,
+        "rounds": 59.2
+      },
+      {
+        "server": "EvilServer",
+        "network": "InsertNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 22.6,
+        "rounds": 49.00000000000001
+      },
+      {
+        "server": "EvilServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 25.8,
+        "rounds": 49.8
+      },
+      {
+        "server": "EvilServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 37.6,
+        "rounds": 63.60000000000001
+      },
+      {
+        "server": "EvilServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 33.0,
+        "rounds": 56.800000000000004
+      },
+      {
+        "server": "EvilServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 69.8,
+        "rounds": 107.8
+      },
+      {
+        "server": "EvilServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 53.4,
+        "rounds": 84.0
+      },
+      {
+        "server": "EvilServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 41.8,
+        "rounds": 63.400000000000006
+      },
+      {
+        "server": "EvilServer",
+        "network": "StackNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 54.0
+      },
+      {
+        "server": "EvilServer",
+        "network": "StackNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 30.0
+      },
+      {
+        "server": "EvilServer",
+        "network": "StackNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 42.0
+      },
+      {
+        "server": "RandomServer",
+        "network": "Network",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 43.8,
+        "rounds": 70.4
+      },
+      {
+        "server": "RandomServer",
+        "network": "Network",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 44.199999999999996,
+        "rounds": 70.39999999999999
+      },
+      {
+        "server": "RandomServer",
+        "network": "Network",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 34.8,
+        "rounds": 56.800000000000004
+      },
+      {
+        "server": "RandomServer",
+        "network": "SlowNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 182.0,
+        "rounds": 64.8
+      },
+      {
+        "server": "RandomServer",
+        "network": "SlowNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 248.40000000000003,
+        "rounds": 88.60000000000001
+      },
+      {
+        "server": "RandomServer",
+        "network": "SlowNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 270.8,
+        "rounds": 93.19999999999999
+      },
+      {
+        "server": "RandomServer",
+        "network": "InsertNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 71960.0,
+        "rounds": 12045.6
+      },
+      {
+        "server": "RandomServer",
+        "network": "InsertNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 36.2,
+        "rounds": 69.4
+      },
+      {
+        "server": "RandomServer",
+        "network": "InsertNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 32.6,
+        "rounds": 65.8
+      },
+      {
+        "server": "RandomServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 48.8,
+        "rounds": 87.4
+      },
+      {
+        "server": "RandomServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 37.8,
+        "rounds": 63.60000000000001
+      },
+      {
+        "server": "RandomServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 31.799999999999997,
+        "rounds": 56.6
+      },
+      {
+        "server": "RandomServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 25.799999999999997,
+        "rounds": 46.6
+      },
+      {
+        "server": "RandomServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 44.2,
+        "rounds": 73.8
+      },
+      {
+        "server": "RandomServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 27.800000000000004,
+        "rounds": 50.0
+      },
+      {
+        "server": "RandomServer",
+        "network": "StackNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 54.0
+      },
+      {
+        "server": "RandomServer",
+        "network": "StackNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 42.0
+      },
+      {
+        "server": "RandomServer",
+        "network": "StackNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 48.0
+      },
+      {
+        "server": "SilentServer",
+        "network": "Network",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 36.0
+      },
+      {
+        "server": "SilentServer",
+        "network": "Network",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 42.0
+      },
+      {
+        "server": "SilentServer",
+        "network": "Network",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 36.0
+      },
+      {
+        "server": "SilentServer",
+        "network": "SlowNetwork",
+        "scheduler": "Scheduler",
+        "successes": 3,
+        "failures": 2,
+        "base_seed": 782,
+        "dead_messages": 144023.6,
+        "rounds": 24030.399999999998
+      },
+      {
+        "server": "SilentServer",
+        "network": "SlowNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 3,
+        "failures": 2,
+        "base_seed": 782,
+        "dead_messages": 215942.6,
+        "rounds": 36011.2
+      },
+      {
+        "server": "SilentServer",
+        "network": "SlowNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 2,
+        "failures": 3,
+        "base_seed": 782,
+        "dead_messages": 215968.4,
+        "rounds": 36012.799999999996
+      },
+      {
+        "server": "SilentServer",
+        "network": "InsertNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 24.0
+      },
+      {
+        "server": "SilentServer",
+        "network": "InsertNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 39.0
+      },
+      {
+        "server": "SilentServer",
+        "network": "InsertNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 30.0
+      },
+      {
+        "server": "SilentServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 45.0
+      },
+      {
+        "server": "SilentServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 54.0
+      },
+      {
+        "server": "SilentServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 42.0
+      },
+      {
+        "server": "SilentServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 27.0
+      },
+      {
+        "server": "SilentServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 39.0
+      },
+      {
+        "server": "SilentServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 24.0
+      },
+      {
+        "server": "SilentServer",
+        "network": "StackNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 36.0
+      },
+      {
+        "server": "SilentServer",
+        "network": "StackNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 42.0
+      },
+      {
+        "server": "SilentServer",
+        "network": "StackNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 36.0
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "Network",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 13.199999999999998,
+        "rounds": 35.2
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "Network",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 34.800000000000004,
+        "rounds": 83.8
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "Network",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 9.6,
+        "rounds": 28.599999999999998
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "SlowNetwork",
+        "scheduler": "Scheduler",
+        "successes": 3,
+        "failures": 2,
+        "base_seed": 782,
+        "dead_messages": 144026.0,
+        "rounds": 24029.8
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "SlowNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 3,
+        "failures": 2,
+        "base_seed": 782,
+        "dead_messages": 144057.80000000002,
+        "rounds": 24044.600000000002
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "SlowNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 183.0,
+        "rounds": 68.0
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "InsertNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 7.0,
+        "rounds": 37.4
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "InsertNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 4.4,
+        "rounds": 30.799999999999997
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "InsertNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 2.8,
+        "rounds": 30.6
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 71976.6,
+        "rounds": 12022.400000000001
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 71972.40000000001,
+        "rounds": 12028.0
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 14.4,
+        "rounds": 41.60000000000001
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 27.2,
+        "rounds": 73.60000000000001
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 13.0,
+        "rounds": 38.2
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 30.599999999999998,
+        "rounds": 80.2
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "StackNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 33.0
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "StackNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 36.0
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "StackNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 33.0
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "Network",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 46.400000000000006,
+        "rounds": 73.8
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "Network",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 20.400000000000002,
+        "rounds": 36.400000000000006
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "Network",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 18.0,
+        "rounds": 33.0
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "SlowNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 260.2,
+        "rounds": 94.6
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "SlowNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 157.2,
+        "rounds": 56.99999999999999
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "SlowNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 177.2,
+        "rounds": 64.0
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "InsertNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 37.6,
+        "rounds": 72.8
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "InsertNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 11.0,
+        "rounds": 32.0
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "InsertNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 16.6,
+        "rounds": 42.199999999999996
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 14.4,
+        "rounds": 33.00000000000001
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 20.400000000000002,
+        "rounds": 40.00000000000001
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 63.4,
+        "rounds": 101.0
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 25.0,
+        "rounds": 43.2
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 35.6,
+        "rounds": 60.199999999999996
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 27.0,
+        "rounds": 46.6
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "StackNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 30.0
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "StackNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 27.0
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "StackNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 36.0
+      }
+    ]
+  },
+  {
+    "n": 11,
+    "results": [
+      {
+        "server": "Server",
+        "network": "Network",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 66.0,
+        "rounds": 52.0
+      },
+      {
+        "server": "Server",
+        "network": "Network",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 145.2,
+        "rounds": 100.6
+      },
+      {
+        "server": "Server",
+        "network": "Network",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 66.0,
+        "rounds": 52.0
+      },
+      {
+        "server": "Server",
+        "network": "SlowNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 978.8,
+        "rounds": 170.79999999999998
+      },
+      {
+        "server": "Server",
+        "network": "SlowNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 944.0,
+        "rounds": 166.2
+      },
+      {
+        "server": "Server",
+        "network": "SlowNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 1145.4,
+        "rounds": 200.00000000000003
+      },
+      {
+        "server": "Server",
+        "network": "InsertNetwork",
+        "scheduler": "Scheduler",
+        "successes": 3,
+        "failures": 2,
+        "base_seed": 782,
+        "dead_messages": 483593.80000000005,
+        "rounds": 44036.0
+      },
+      {
+        "server": "Server",
+        "network": "InsertNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 65.8,
+        "rounds": 57.2
+      },
+      {
+        "server": "Server",
+        "network": "InsertNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 52.199999999999996,
+        "rounds": 51.0
+      },
+      {
+        "server": "Server",
+        "network": "RandomPollNetwork",
+        "scheduler": "Scheduler",
+        "successes": 4,
+        "failures": 1,
+        "base_seed": 782,
+        "dead_messages": 241551.2,
+        "rounds": 22030.800000000003
+      },
+      {
+        "server": "Server",
+        "network": "RandomPollNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 4,
+        "failures": 1,
+        "base_seed": 782,
+        "dead_messages": 284476.60000000003,
+        "rounds": 44020.6
+      },
+      {
+        "server": "Server",
+        "network": "RandomPollNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 44023.59999999999,
+        "rounds": 22030.800000000003
+      },
+      {
+        "server": "Server",
+        "network": "ApproximateNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 425066.2,
+        "rounds": 44020.4
+      },
+      {
+        "server": "Server",
+        "network": "ApproximateNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 127.0,
+        "rounds": 90.4
+      },
+      {
+        "server": "Server",
+        "network": "ApproximateNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 99.2,
+        "rounds": 73.6
+      },
+      {
+        "server": "Server",
+        "network": "StackNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 82.8
+      },
+      {
+        "server": "Server",
+        "network": "StackNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 82.8
+      },
+      {
+        "server": "Server",
+        "network": "StackNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 82.8
+      },
+      {
+        "server": "EvilServer",
+        "network": "Network",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 110.0,
+        "rounds": 79.0
+      },
+      {
+        "server": "EvilServer",
+        "network": "Network",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 83.60000000000001,
+        "rounds": 62.8
+      },
+      {
+        "server": "EvilServer",
+        "network": "Network",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 118.80000000000001,
+        "rounds": 84.39999999999999
+      },
+      {
+        "server": "EvilServer",
+        "network": "SlowNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 2637.2000000000003,
+        "rounds": 450.8
+      },
+      {
+        "server": "EvilServer",
+        "network": "SlowNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 1034.6000000000001,
+        "rounds": 181.8
+      },
+      {
+        "server": "EvilServer",
+        "network": "SlowNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 1214.0,
+        "rounds": 210.79999999999998
+      },
+      {
+        "server": "EvilServer",
+        "network": "InsertNetwork",
+        "scheduler": "Scheduler",
+        "successes": 4,
+        "failures": 1,
+        "base_seed": 782,
+        "dead_messages": 482928.4,
+        "rounds": 44036.0
+      },
+      {
+        "server": "EvilServer",
+        "network": "InsertNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 4,
+        "failures": 1,
+        "base_seed": 782,
+        "dead_messages": 241824.19999999998,
+        "rounds": 22068.0
+      },
+      {
+        "server": "EvilServer",
+        "network": "InsertNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 2,
+        "failures": 3,
+        "base_seed": 782,
+        "dead_messages": 724323.6,
+        "rounds": 66009.6
+      },
+      {
+        "server": "EvilServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 724625.4,
+        "rounds": 66010.0
+      },
+      {
+        "server": "EvilServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 44049.40000000001,
+        "rounds": 22047.2
+      },
+      {
+        "server": "EvilServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 2,
+        "failures": 3,
+        "base_seed": 782,
+        "dead_messages": 527258.2000000001,
+        "rounds": 66010.0
+      },
+      {
+        "server": "EvilServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 176.0,
+        "rounds": 122.2
+      },
+      {
+        "server": "EvilServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 4,
+        "failures": 1,
+        "base_seed": 782,
+        "dead_messages": 285631.6,
+        "rounds": 44020.4
+      },
+      {
+        "server": "EvilServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 238.79999999999998,
+        "rounds": 160.2
+      },
+      {
+        "server": "EvilServer",
+        "network": "StackNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 36.800000000000004
+      },
+      {
+        "server": "EvilServer",
+        "network": "StackNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 64.39999999999999
+      },
+      {
+        "server": "EvilServer",
+        "network": "StackNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 82.8
+      },
+      {
+        "server": "RandomServer",
+        "network": "Network",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 82.60000000000001,
+        "rounds": 62.8
+      },
+      {
+        "server": "RandomServer",
+        "network": "Network",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 65.4,
+        "rounds": 52.0
+      },
+      {
+        "server": "RandomServer",
+        "network": "Network",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 74.8,
+        "rounds": 57.400000000000006
+      },
+      {
+        "server": "RandomServer",
+        "network": "SlowNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 1143.6000000000001,
+        "rounds": 199.59999999999997
+      },
+      {
+        "server": "RandomServer",
+        "network": "SlowNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 740.0,
+        "rounds": 132.6
+      },
+      {
+        "server": "RandomServer",
+        "network": "SlowNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 1487.0,
+        "rounds": 259.2
+      },
+      {
+        "server": "RandomServer",
+        "network": "InsertNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 481509.2,
+        "rounds": 44035.8
+      },
+      {
+        "server": "RandomServer",
+        "network": "InsertNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 241846.99999999997,
+        "rounds": 22051.600000000002
+      },
+      {
+        "server": "RandomServer",
+        "network": "InsertNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 4,
+        "failures": 1,
+        "base_seed": 782,
+        "dead_messages": 481252.6,
+        "rounds": 44019.8
+      },
+      {
+        "server": "RandomServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 83.2,
+        "rounds": 62.4
+      },
+      {
+        "server": "RandomServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 241913.0,
+        "rounds": 22057.6
+      },
+      {
+        "server": "RandomServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 3,
+        "failures": 2,
+        "base_seed": 782,
+        "dead_messages": 482720.0,
+        "rounds": 44020.6
+      },
+      {
+        "server": "RandomServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 86.60000000000001,
+        "rounds": 68.2
+      },
+      {
+        "server": "RandomServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 139.20000000000002,
+        "rounds": 100.6
+      },
+      {
+        "server": "RandomServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 4,
+        "failures": 1,
+        "base_seed": 782,
+        "dead_messages": 164765.0,
+        "rounds": 22058.2
+      },
+      {
+        "server": "RandomServer",
+        "network": "StackNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 50.599999999999994
+      },
+      {
+        "server": "RandomServer",
+        "network": "StackNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 82.8
+      },
+      {
+        "server": "RandomServer",
+        "network": "StackNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 96.59999999999998
+      },
+      {
+        "server": "SilentServer",
+        "network": "Network",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 82.8
+      },
+      {
+        "server": "SilentServer",
+        "network": "Network",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 73.6
+      },
+      {
+        "server": "SilentServer",
+        "network": "Network",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 82.8
+      },
+      {
+        "server": "SilentServer",
+        "network": "SlowNetwork",
+        "scheduler": "Scheduler",
+        "successes": 2,
+        "failures": 3,
+        "base_seed": 782,
+        "dead_messages": 725867.2000000001,
+        "rounds": 66021.2
+      },
+      {
+        "server": "SilentServer",
+        "network": "SlowNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 3,
+        "failures": 2,
+        "base_seed": 782,
+        "dead_messages": 484027.19999999995,
+        "rounds": 44028.600000000006
+      },
+      {
+        "server": "SilentServer",
+        "network": "SlowNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 2,
+        "failures": 3,
+        "base_seed": 782,
+        "dead_messages": 725918.0,
+        "rounds": 66018.6
+      },
+      {
+        "server": "SilentServer",
+        "network": "InsertNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 32.199999999999996
+      },
+      {
+        "server": "SilentServer",
+        "network": "InsertNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 27.6
+      },
+      {
+        "server": "SilentServer",
+        "network": "InsertNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 64.39999999999999
+      },
+      {
+        "server": "SilentServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 105.79999999999998
+      },
+      {
+        "server": "SilentServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 55.199999999999996
+      },
+      {
+        "server": "SilentServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 82.8
+      },
+      {
+        "server": "SilentServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 46.00000000000001
+      },
+      {
+        "server": "SilentServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 27.6
+      },
+      {
+        "server": "SilentServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 50.6
+      },
+      {
+        "server": "SilentServer",
+        "network": "StackNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 82.8
+      },
+      {
+        "server": "SilentServer",
+        "network": "StackNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 73.6
+      },
+      {
+        "server": "SilentServer",
+        "network": "StackNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 82.8
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "Network",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 85.80000000000001,
+        "rounds": 104.4
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "Network",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 121.00000000000001,
+        "rounds": 144.4
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "Network",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 96.80000000000001,
+        "rounds": 114.6
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "SlowNetwork",
+        "scheduler": "Scheduler",
+        "successes": 3,
+        "failures": 2,
+        "base_seed": 782,
+        "dead_messages": 483708.6,
+        "rounds": 44034.200000000004
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "SlowNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 400.40000000000003,
+        "rounds": 81.60000000000001
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "SlowNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 2,
+        "failures": 3,
+        "base_seed": 782,
+        "dead_messages": 725941.4000000001,
+        "rounds": 66024.0
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "InsertNetwork",
+        "scheduler": "Scheduler",
+        "successes": 4,
+        "failures": 1,
+        "base_seed": 782,
+        "dead_messages": 241389.19999999998,
+        "rounds": 22037.8
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "InsertNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 4,
+        "failures": 1,
+        "base_seed": 782,
+        "dead_messages": 241582.4,
+        "rounds": 22023.399999999998
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "InsertNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 22.0,
+        "rounds": 57.199999999999996
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "Scheduler",
+        "successes": 4,
+        "failures": 1,
+        "base_seed": 782,
+        "dead_messages": 483208.0,
+        "rounds": 44019.8
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 4,
+        "failures": 1,
+        "base_seed": 782,
+        "dead_messages": 241833.2,
+        "rounds": 22048.2
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 3,
+        "failures": 2,
+        "base_seed": 782,
+        "dead_messages": 483463.4,
+        "rounds": 44019.8
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "Scheduler",
+        "successes": 4,
+        "failures": 1,
+        "base_seed": 782,
+        "dead_messages": 241828.40000000002,
+        "rounds": 22080.2
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 15.2,
+        "rounds": 33.599999999999994
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 111.8,
+        "rounds": 148.2
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "StackNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 229.99999999999997
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "StackNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 105.8
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "StackNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 64.39999999999999
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "Network",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 109.0,
+        "rounds": 79.0
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "Network",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 48.400000000000006,
+        "rounds": 41.199999999999996
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "Network",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 118.00000000000001,
+        "rounds": 84.39999999999999
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "SlowNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 727.3999999999999,
+        "rounds": 128.20000000000002
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "SlowNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 570.6,
+        "rounds": 100.8
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "SlowNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 1080.4,
+        "rounds": 189.6
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "InsertNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 241887.59999999998,
+        "rounds": 22046.2
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "InsertNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 240926.0,
+        "rounds": 22046.2
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "InsertNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 241864.2,
+        "rounds": 22030.2
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 241594.6,
+        "rounds": 22031.0
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 482601.8,
+        "rounds": 44025.6
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 241131.4,
+        "rounds": 22037.2
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 116.2,
+        "rounds": 84.80000000000001
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 44037.0,
+        "rounds": 22036.2
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 132.0,
+        "rounds": 95.2
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "StackNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 59.8
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "StackNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 78.19999999999999
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "StackNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 41.4
+      }
+    ]
+  },
+  {
+    "n": 16,
+    "results": [
+      {
+        "server": "Server",
+        "network": "Network",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 969.6,
+        "rounds": 389.2
+      },
+      {
+        "server": "Server",
+        "network": "Network",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 2352.0,
+        "rounds": 922.0
+      },
+      {
+        "server": "Server",
+        "network": "Network",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 873.6,
+        "rounds": 352.2
+      },
+      {
+        "server": "Server",
+        "network": "SlowNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 4962.400000000001,
+        "rounds": 566.6
+      },
+      {
+        "server": "Server",
+        "network": "SlowNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 18460.2,
+        "rounds": 2066.6
+      },
+      {
+        "server": "Server",
+        "network": "SlowNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 6707.400000000001,
+        "rounds": 759.8
+      },
+      {
+        "server": "Server",
+        "network": "InsertNetwork",
+        "scheduler": "Scheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 2033675.4000000001,
+        "rounds": 128014.0
+      },
+      {
+        "server": "Server",
+        "network": "InsertNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 2549055.6,
+        "rounds": 160000.0
+      },
+      {
+        "server": "Server",
+        "network": "InsertNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 2,
+        "failures": 3,
+        "base_seed": 782,
+        "dead_messages": 2555427.6,
+        "rounds": 160000.0
+      },
+      {
+        "server": "Server",
+        "network": "RandomPollNetwork",
+        "scheduler": "Scheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 2138821.0,
+        "rounds": 160000.0
+      },
+      {
+        "server": "Server",
+        "network": "RandomPollNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 2,
+        "failures": 3,
+        "base_seed": 782,
+        "dead_messages": 1723842.6,
+        "rounds": 160000.0
+      },
+      {
+        "server": "Server",
+        "network": "RandomPollNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 3,
+        "failures": 2,
+        "base_seed": 782,
+        "dead_messages": 2141478.4,
+        "rounds": 160000.0
+      },
+      {
+        "server": "Server",
+        "network": "ApproximateNetwork",
+        "scheduler": "Scheduler",
+        "successes": 3,
+        "failures": 2,
+        "base_seed": 782,
+        "dead_messages": 1940148.8,
+        "rounds": 128014.2
+      },
+      {
+        "server": "Server",
+        "network": "ApproximateNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 3,
+        "failures": 2,
+        "base_seed": 782,
+        "dead_messages": 1884540.4,
+        "rounds": 128021.8
+      },
+      {
+        "server": "Server",
+        "network": "ApproximateNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 4,
+        "failures": 1,
+        "base_seed": 782,
+        "dead_messages": 507014.80000000005,
+        "rounds": 64381.4
+      },
+      {
+        "server": "Server",
+        "network": "StackNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 235.60000000000002
+      },
+      {
+        "server": "Server",
+        "network": "StackNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 217.0
+      },
+      {
+        "server": "Server",
+        "network": "StackNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 217.0
+      },
+      {
+        "server": "EvilServer",
+        "network": "Network",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 1046.3999999999999,
+        "rounds": 418.8
+      },
+      {
+        "server": "EvilServer",
+        "network": "Network",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 355.20000000000005,
+        "rounds": 152.4
+      },
+      {
+        "server": "EvilServer",
+        "network": "Network",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 604.8,
+        "rounds": 248.60000000000002
+      },
+      {
+        "server": "EvilServer",
+        "network": "SlowNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 9660.2,
+        "rounds": 1096.1999999999998
+      },
+      {
+        "server": "EvilServer",
+        "network": "SlowNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 11567.4,
+        "rounds": 1307.0
+      },
+      {
+        "server": "EvilServer",
+        "network": "SlowNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 8513.4,
+        "rounds": 963.8
+      },
+      {
+        "server": "EvilServer",
+        "network": "InsertNetwork",
+        "scheduler": "Scheduler",
+        "successes": 3,
+        "failures": 2,
+        "base_seed": 782,
+        "dead_messages": 1531687.6,
+        "rounds": 96059.6
+      },
+      {
+        "server": "EvilServer",
+        "network": "InsertNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 2042577.2,
+        "rounds": 128028.8
+      },
+      {
+        "server": "EvilServer",
+        "network": "InsertNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 2554386.0,
+        "rounds": 160000.0
+      },
+      {
+        "server": "EvilServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "Scheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 1726021.5999999999,
+        "rounds": 160000.0
+      },
+      {
+        "server": "EvilServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 1723134.6,
+        "rounds": 160000.0
+      },
+      {
+        "server": "EvilServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 895660.0,
+        "rounds": 160000.0
+      },
+      {
+        "server": "EvilServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "Scheduler",
+        "successes": 2,
+        "failures": 3,
+        "base_seed": 782,
+        "dead_messages": 1967810.1999999997,
+        "rounds": 128042.6
+      },
+      {
+        "server": "EvilServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 4,
+        "failures": 1,
+        "base_seed": 782,
+        "dead_messages": 531667.8,
+        "rounds": 64201.4
+      },
+      {
+        "server": "EvilServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 2,
+        "failures": 3,
+        "base_seed": 782,
+        "dead_messages": 1754984.8,
+        "rounds": 128098.2
+      },
+      {
+        "server": "EvilServer",
+        "network": "StackNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 254.2
+      },
+      {
+        "server": "EvilServer",
+        "network": "StackNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 347.2
+      },
+      {
+        "server": "EvilServer",
+        "network": "StackNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 248.0
+      },
+      {
+        "server": "RandomServer",
+        "network": "Network",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 1081.0,
+        "rounds": 433.59999999999997
+      },
+      {
+        "server": "RandomServer",
+        "network": "Network",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 1445.1999999999998,
+        "rounds": 574.2
+      },
+      {
+        "server": "RandomServer",
+        "network": "Network",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 585.5999999999999,
+        "rounds": 241.2
+      },
+      {
+        "server": "RandomServer",
+        "network": "SlowNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 6568.0,
+        "rounds": 743.1999999999999
+      },
+      {
+        "server": "RandomServer",
+        "network": "SlowNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 9967.0,
+        "rounds": 1131.6
+      },
+      {
+        "server": "RandomServer",
+        "network": "SlowNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 4248.0,
+        "rounds": 481.4
+      },
+      {
+        "server": "RandomServer",
+        "network": "InsertNetwork",
+        "scheduler": "Scheduler",
+        "successes": 2,
+        "failures": 3,
+        "base_seed": 782,
+        "dead_messages": 2557449.8000000003,
+        "rounds": 160000.0
+      },
+      {
+        "server": "RandomServer",
+        "network": "InsertNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 2,
+        "failures": 3,
+        "base_seed": 782,
+        "dead_messages": 2557628.4,
+        "rounds": 160000.0
+      },
+      {
+        "server": "RandomServer",
+        "network": "InsertNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 2045817.2000000002,
+        "rounds": 128028.0
+      },
+      {
+        "server": "RandomServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "Scheduler",
+        "successes": 3,
+        "failures": 2,
+        "base_seed": 782,
+        "dead_messages": 2546103.4,
+        "rounds": 160000.0
+      },
+      {
+        "server": "RandomServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 2,
+        "failures": 3,
+        "base_seed": 782,
+        "dead_messages": 2558189.6,
+        "rounds": 160000.0
+      },
+      {
+        "server": "RandomServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 2139101.6,
+        "rounds": 160000.0
+      },
+      {
+        "server": "RandomServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "Scheduler",
+        "successes": 2,
+        "failures": 3,
+        "base_seed": 782,
+        "dead_messages": 2434506.2,
+        "rounds": 160000.0
+      },
+      {
+        "server": "RandomServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 4,
+        "failures": 1,
+        "base_seed": 782,
+        "dead_messages": 288425.79999999993,
+        "rounds": 32116.800000000003
+      },
+      {
+        "server": "RandomServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 4,
+        "failures": 1,
+        "base_seed": 782,
+        "dead_messages": 1270615.4,
+        "rounds": 96093.20000000001
+      },
+      {
+        "server": "RandomServer",
+        "network": "StackNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 384.40000000000003
+      },
+      {
+        "server": "RandomServer",
+        "network": "StackNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 372.0
+      },
+      {
+        "server": "RandomServer",
+        "network": "StackNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 272.8
+      },
+      {
+        "server": "SilentServer",
+        "network": "Network",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 241.8
+      },
+      {
+        "server": "SilentServer",
+        "network": "Network",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 254.2
+      },
+      {
+        "server": "SilentServer",
+        "network": "Network",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 229.39999999999998
+      },
+      {
+        "server": "SilentServer",
+        "network": "SlowNetwork",
+        "scheduler": "Scheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 2559293.8,
+        "rounds": 160000.0
+      },
+      {
+        "server": "SilentServer",
+        "network": "SlowNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 2559085.8000000003,
+        "rounds": 160000.0
+      },
+      {
+        "server": "SilentServer",
+        "network": "SlowNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 2559233.0,
+        "rounds": 160000.0
+      },
+      {
+        "server": "SilentServer",
+        "network": "InsertNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 347.2
+      },
+      {
+        "server": "SilentServer",
+        "network": "InsertNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 266.6
+      },
+      {
+        "server": "SilentServer",
+        "network": "InsertNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 341.0
+      },
+      {
+        "server": "SilentServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 223.2
+      },
+      {
+        "server": "SilentServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 378.2
+      },
+      {
+        "server": "SilentServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 204.6
+      },
+      {
+        "server": "SilentServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 266.6
+      },
+      {
+        "server": "SilentServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 316.2
+      },
+      {
+        "server": "SilentServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 266.6
+      },
+      {
+        "server": "SilentServer",
+        "network": "StackNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 241.8
+      },
+      {
+        "server": "SilentServer",
+        "network": "StackNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 254.2
+      },
+      {
+        "server": "SilentServer",
+        "network": "StackNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 229.39999999999998
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "Network",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 825.6000000000001,
+        "rounds": 578.5999999999999
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "Network",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 284.80000000000007,
+        "rounds": 247.20000000000002
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "Network",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 876.8000000000001,
+        "rounds": 612.8
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "SlowNetwork",
+        "scheduler": "Scheduler",
+        "successes": 4,
+        "failures": 1,
+        "base_seed": 782,
+        "dead_messages": 513451.80000000005,
+        "rounds": 32196.800000000003
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "SlowNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 2,
+        "failures": 3,
+        "base_seed": 782,
+        "dead_messages": 1535796.2000000002,
+        "rounds": 96159.2
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "SlowNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 2,
+        "failures": 3,
+        "base_seed": 782,
+        "dead_messages": 1534319.0,
+        "rounds": 96260.0
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "InsertNetwork",
+        "scheduler": "Scheduler",
+        "successes": 2,
+        "failures": 3,
+        "base_seed": 782,
+        "dead_messages": 1534243.0,
+        "rounds": 96026.2
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "InsertNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 2,
+        "failures": 3,
+        "base_seed": 782,
+        "dead_messages": 1533971.2,
+        "rounds": 96072.0
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "InsertNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 2558176.6,
+        "rounds": 160000.0
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "Scheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 2556575.1999999997,
+        "rounds": 160000.0
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 2045172.0,
+        "rounds": 128013.2
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 2,
+        "failures": 3,
+        "base_seed": 782,
+        "dead_messages": 2044613.6,
+        "rounds": 128019.6
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 162.39999999999998,
+        "rounds": 121.8
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 32349.399999999998,
+        "rounds": 32191.4
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 217.79999999999998,
+        "rounds": 163.0
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "StackNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 297.6
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "StackNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 217.0
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "StackNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 520.8
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "Network",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 1027.2,
+        "rounds": 411.40000000000003
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "Network",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 853.4000000000001,
+        "rounds": 344.79999999999995
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "Network",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 816.0,
+        "rounds": 330.0
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "SlowNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 5182.4,
+        "rounds": 588.8000000000001
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "SlowNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 6903.199999999999,
+        "rounds": 783.8
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "SlowNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 4473.599999999999,
+        "rounds": 507.79999999999995
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "InsertNetwork",
+        "scheduler": "Scheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 2044939.7999999998,
+        "rounds": 128014.6
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "InsertNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 2,
+        "failures": 3,
+        "base_seed": 782,
+        "dead_messages": 2556040.8000000003,
+        "rounds": 160000.0
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "InsertNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 2044629.2,
+        "rounds": 128021.4
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "Scheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 1716317.2,
+        "rounds": 160000.0
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 1722964.0,
+        "rounds": 160000.0
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 2,
+        "failures": 3,
+        "base_seed": 782,
+        "dead_messages": 1630737.4000000001,
+        "rounds": 128014.4
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "Scheduler",
+        "successes": 4,
+        "failures": 1,
+        "base_seed": 782,
+        "dead_messages": 601396.2000000001,
+        "rounds": 64186.2
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 3,
+        "failures": 2,
+        "base_seed": 782,
+        "dead_messages": 1405705.6,
+        "rounds": 96043.4
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 3,
+        "failures": 2,
+        "base_seed": 782,
+        "dead_messages": 950339.2,
+        "rounds": 96043.2
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "StackNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 347.2
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "StackNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 105.4
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "StackNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 254.20000000000002
+      }
+    ]
+  },
+  {
+    "n": 21,
+    "results": [
+      {
+        "server": "Server",
+        "network": "Network",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 6300.0,
+        "rounds": 1782.0
+      },
+      {
+        "server": "Server",
+        "network": "Network",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 3376.8,
+        "rounds": 964.1999999999998
+      },
+      {
+        "server": "Server",
+        "network": "Network",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 5460.0,
+        "rounds": 1547.0
+      },
+      {
+        "server": "Server",
+        "network": "SlowNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 29687.000000000004,
+        "rounds": 2498.3999999999996
+      },
+      {
+        "server": "Server",
+        "network": "SlowNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 25426.800000000003,
+        "rounds": 2137.6000000000004
+      },
+      {
+        "server": "Server",
+        "network": "SlowNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 24705.2,
+        "rounds": 2086.0
+      },
+      {
+        "server": "Server",
+        "network": "InsertNetwork",
+        "scheduler": "Scheduler",
+        "successes": 4,
+        "failures": 1,
+        "base_seed": 782,
+        "dead_messages": 2642246.8,
+        "rounds": 126039.2
+      },
+      {
+        "server": "Server",
+        "network": "InsertNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 4400820.0,
+        "rounds": 210000.0
+      },
+      {
+        "server": "Server",
+        "network": "InsertNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 4407012.6,
+        "rounds": 210000.0
+      },
+      {
+        "server": "Server",
+        "network": "RandomPollNetwork",
+        "scheduler": "Scheduler",
+        "successes": 3,
+        "failures": 2,
+        "base_seed": 782,
+        "dead_messages": 3693807.3999999994,
+        "rounds": 210000.0
+      },
+      {
+        "server": "Server",
+        "network": "RandomPollNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 2,
+        "failures": 3,
+        "base_seed": 782,
+        "dead_messages": 2980069.5999999996,
+        "rounds": 210000.0
+      },
+      {
+        "server": "Server",
+        "network": "RandomPollNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 3694037.8,
+        "rounds": 210000.0
+      },
+      {
+        "server": "Server",
+        "network": "ApproximateNetwork",
+        "scheduler": "Scheduler",
+        "successes": 2,
+        "failures": 3,
+        "base_seed": 782,
+        "dead_messages": 3480050.4,
+        "rounds": 210000.0
+      },
+      {
+        "server": "Server",
+        "network": "ApproximateNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 3346657.4000000004,
+        "rounds": 210000.0
+      },
+      {
+        "server": "Server",
+        "network": "ApproximateNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 3482061.8,
+        "rounds": 168019.2
+      },
+      {
+        "server": "Server",
+        "network": "StackNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 600.6
+      },
+      {
+        "server": "Server",
+        "network": "StackNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 1879.8000000000002
+      },
+      {
+        "server": "Server",
+        "network": "StackNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 1006.1999999999999
+      },
+      {
+        "server": "EvilServer",
+        "network": "Network",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 1932.0,
+        "rounds": 560.0
+      },
+      {
+        "server": "EvilServer",
+        "network": "Network",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 2570.4,
+        "rounds": 738.6
+      },
+      {
+        "server": "EvilServer",
+        "network": "Network",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 3108.0,
+        "rounds": 889.0
+      },
+      {
+        "server": "EvilServer",
+        "network": "SlowNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 34511.2,
+        "rounds": 2905.7999999999997
+      },
+      {
+        "server": "EvilServer",
+        "network": "SlowNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 5964.8,
+        "rounds": 509.6
+      },
+      {
+        "server": "EvilServer",
+        "network": "SlowNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 19136.6,
+        "rounds": 1621.8
+      },
+      {
+        "server": "EvilServer",
+        "network": "InsertNetwork",
+        "scheduler": "Scheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 4378974.8,
+        "rounds": 210000.0
+      },
+      {
+        "server": "EvilServer",
+        "network": "InsertNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 4400582.4,
+        "rounds": 210000.0
+      },
+      {
+        "server": "EvilServer",
+        "network": "InsertNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 4407075.0,
+        "rounds": 210000.0
+      },
+      {
+        "server": "EvilServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "Scheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 4406570.4,
+        "rounds": 210000.0
+      },
+      {
+        "server": "EvilServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 4407161.4,
+        "rounds": 210000.0
+      },
+      {
+        "server": "EvilServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 3693866.4,
+        "rounds": 210000.0
+      },
+      {
+        "server": "EvilServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "Scheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 3376618.8,
+        "rounds": 210000.0
+      },
+      {
+        "server": "EvilServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 2886015.8,
+        "rounds": 210000.0
+      },
+      {
+        "server": "EvilServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 3134740.4000000004,
+        "rounds": 210000.0
+      },
+      {
+        "server": "EvilServer",
+        "network": "StackNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 577.2
+      },
+      {
+        "server": "EvilServer",
+        "network": "StackNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 748.8
+      },
+      {
+        "server": "EvilServer",
+        "network": "StackNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 616.2
+      },
+      {
+        "server": "RandomServer",
+        "network": "Network",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 2567.4,
+        "rounds": 738.5999999999999
+      },
+      {
+        "server": "RandomServer",
+        "network": "Network",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 2465.6,
+        "rounds": 710.4
+      },
+      {
+        "server": "RandomServer",
+        "network": "Network",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 1960.8000000000002,
+        "rounds": 569.4
+      },
+      {
+        "server": "RandomServer",
+        "network": "SlowNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 19753.6,
+        "rounds": 1661.2
+      },
+      {
+        "server": "RandomServer",
+        "network": "SlowNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 22388.4,
+        "rounds": 1891.0
+      },
+      {
+        "server": "RandomServer",
+        "network": "SlowNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 11370.4,
+        "rounds": 965.8
+      },
+      {
+        "server": "RandomServer",
+        "network": "InsertNetwork",
+        "scheduler": "Scheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 4406931.0,
+        "rounds": 210000.0
+      },
+      {
+        "server": "RandomServer",
+        "network": "InsertNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 4406557.4,
+        "rounds": 210000.0
+      },
+      {
+        "server": "RandomServer",
+        "network": "InsertNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 2,
+        "failures": 3,
+        "base_seed": 782,
+        "dead_messages": 3513685.5999999996,
+        "rounds": 168027.4
+      },
+      {
+        "server": "RandomServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "Scheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 3526153.0,
+        "rounds": 168027.4
+      },
+      {
+        "server": "RandomServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 3693851.0,
+        "rounds": 210000.0
+      },
+      {
+        "server": "RandomServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 4407487.2,
+        "rounds": 210000.0
+      },
+      {
+        "server": "RandomServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "Scheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 3450371.5999999996,
+        "rounds": 210000.0
+      },
+      {
+        "server": "RandomServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 3,
+        "failures": 2,
+        "base_seed": 782,
+        "dead_messages": 2942497.4,
+        "rounds": 210000.0
+      },
+      {
+        "server": "RandomServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 2,
+        "failures": 3,
+        "base_seed": 782,
+        "dead_messages": 2119529.8,
+        "rounds": 168130.4
+      },
+      {
+        "server": "RandomServer",
+        "network": "StackNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 616.2
+      },
+      {
+        "server": "RandomServer",
+        "network": "StackNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 1146.6
+      },
+      {
+        "server": "RandomServer",
+        "network": "StackNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 811.2
+      },
+      {
+        "server": "SilentServer",
+        "network": "Network",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 1021.8
+      },
+      {
+        "server": "SilentServer",
+        "network": "Network",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 1092.0
+      },
+      {
+        "server": "SilentServer",
+        "network": "Network",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 1287.0
+      },
+      {
+        "server": "SilentServer",
+        "network": "SlowNetwork",
+        "scheduler": "Scheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 4408413.4,
+        "rounds": 210000.0
+      },
+      {
+        "server": "SilentServer",
+        "network": "SlowNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 4407917.800000001,
+        "rounds": 210000.0
+      },
+      {
+        "server": "SilentServer",
+        "network": "SlowNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 4408577.2,
+        "rounds": 210000.0
+      },
+      {
+        "server": "SilentServer",
+        "network": "InsertNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 998.4000000000001
+      },
+      {
+        "server": "SilentServer",
+        "network": "InsertNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 1076.4
+      },
+      {
+        "server": "SilentServer",
+        "network": "InsertNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 858.0
+      },
+      {
+        "server": "SilentServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 686.4
+      },
+      {
+        "server": "SilentServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 1193.4
+      },
+      {
+        "server": "SilentServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 959.4
+      },
+      {
+        "server": "SilentServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 210.6
+      },
+      {
+        "server": "SilentServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 702.0
+      },
+      {
+        "server": "SilentServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 702.0
+      },
+      {
+        "server": "SilentServer",
+        "network": "StackNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 1021.8
+      },
+      {
+        "server": "SilentServer",
+        "network": "StackNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 1092.0
+      },
+      {
+        "server": "SilentServer",
+        "network": "StackNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 1287.0
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "Network",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 3099.6,
+        "rounds": 1660.8
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "Network",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 2499.0,
+        "rounds": 1281.2
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "Network",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 2100.0,
+        "rounds": 1145.2
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "SlowNetwork",
+        "scheduler": "Scheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 3522553.4,
+        "rounds": 168119.8
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "SlowNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 4,
+        "failures": 1,
+        "base_seed": 782,
+        "dead_messages": 886157.6,
+        "rounds": 42394.200000000004
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "SlowNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 2,
+        "failures": 3,
+        "base_seed": 782,
+        "dead_messages": 2647980.4000000004,
+        "rounds": 126565.79999999999
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "InsertNetwork",
+        "scheduler": "Scheduler",
+        "successes": 2,
+        "failures": 3,
+        "base_seed": 782,
+        "dead_messages": 2643783.0,
+        "rounds": 126033.4
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "InsertNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 2,
+        "failures": 3,
+        "base_seed": 782,
+        "dead_messages": 3524199.0,
+        "rounds": 168015.8
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "InsertNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 3,
+        "failures": 2,
+        "base_seed": 782,
+        "dead_messages": 1762552.4000000001,
+        "rounds": 84065.99999999999
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "Scheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 4405396.600000001,
+        "rounds": 210000.0
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 4406911.8,
+        "rounds": 210000.0
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 3522907.2,
+        "rounds": 168016.6
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "Scheduler",
+        "successes": 3,
+        "failures": 2,
+        "base_seed": 782,
+        "dead_messages": 2681906.2,
+        "rounds": 168025.8
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 3,
+        "failures": 2,
+        "base_seed": 782,
+        "dead_messages": 922476.4,
+        "rounds": 84112.0
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 3,
+        "failures": 2,
+        "base_seed": 782,
+        "dead_messages": 1759135.6,
+        "rounds": 84067.8
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "StackNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 678.6
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "StackNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 1092.0
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "StackNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 1131.0
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "Network",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 1461.6000000000001,
+        "rounds": 428.40000000000003
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "Network",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 1999.1999999999998,
+        "rounds": 578.8
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "Network",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 1663.2,
+        "rounds": 484.8
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "SlowNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 10911.4,
+        "rounds": 925.2
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "SlowNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 13251.2,
+        "rounds": 1129.8
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "SlowNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 12812.599999999999,
+        "rounds": 1088.0
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "InsertNetwork",
+        "scheduler": "Scheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 4407031.4,
+        "rounds": 210000.0
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "InsertNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 4398379.8,
+        "rounds": 210000.0
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "InsertNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 4407110.6,
+        "rounds": 210000.0
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "Scheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 3666194.5999999996,
+        "rounds": 210000.0
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 3691416.4000000004,
+        "rounds": 210000.0
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 4402312.8,
+        "rounds": 210000.0
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "Scheduler",
+        "successes": 2,
+        "failures": 3,
+        "base_seed": 782,
+        "dead_messages": 3478598.4000000004,
+        "rounds": 210000.0
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 2237490.4,
+        "rounds": 210000.0
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 2,
+        "failures": 3,
+        "base_seed": 782,
+        "dead_messages": 4103251.6000000006,
+        "rounds": 210000.0
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "StackNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 351.0
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "StackNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 436.79999999999995
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "StackNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 210.6
+      }
+    ]
+  },
+  {
+    "n": 26,
+    "results": [
+      {
+        "server": "Server",
+        "network": "Network",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 14482.0,
+        "rounds": 3198.4000000000005
+      },
+      {
+        "server": "Server",
+        "network": "Network",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 16458.0,
+        "rounds": 3631.5999999999995
+      },
+      {
+        "server": "Server",
+        "network": "Network",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 15314.0,
+        "rounds": 3380.8
+      },
+      {
+        "server": "Server",
+        "network": "SlowNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 50736.600000000006,
+        "rounds": 3420.6
+      },
+      {
+        "server": "Server",
+        "network": "SlowNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 60780.399999999994,
+        "rounds": 4090.2
+      },
+      {
+        "server": "Server",
+        "network": "SlowNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 105564.8,
+        "rounds": 7077.400000000001
+      },
+      {
+        "server": "Server",
+        "network": "InsertNetwork",
+        "scheduler": "Scheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 6756253.6,
+        "rounds": 260000.0
+      },
+      {
+        "server": "Server",
+        "network": "InsertNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 6755902.2,
+        "rounds": 260000.0
+      },
+      {
+        "server": "Server",
+        "network": "InsertNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 6756091.199999999,
+        "rounds": 260000.0
+      },
+      {
+        "server": "Server",
+        "network": "RandomPollNetwork",
+        "scheduler": "Scheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 6756024.4,
+        "rounds": 260000.0
+      },
+      {
+        "server": "Server",
+        "network": "RandomPollNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 5649045.4,
+        "rounds": 260000.0
+      },
+      {
+        "server": "Server",
+        "network": "RandomPollNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 5665076.4,
+        "rounds": 260000.0
+      },
+      {
+        "server": "Server",
+        "network": "ApproximateNetwork",
+        "scheduler": "Scheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 3941383.8,
+        "rounds": 260000.0
+      },
+      {
+        "server": "Server",
+        "network": "ApproximateNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 5677043.800000001,
+        "rounds": 260000.0
+      },
+      {
+        "server": "Server",
+        "network": "ApproximateNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 5635856.2,
+        "rounds": 260000.0
+      },
+      {
+        "server": "Server",
+        "network": "StackNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 1410.0
+      },
+      {
+        "server": "Server",
+        "network": "StackNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 2162.0
+      },
+      {
+        "server": "Server",
+        "network": "StackNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 1466.4
+      },
+      {
+        "server": "EvilServer",
+        "network": "Network",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 14482.0,
+        "rounds": 3198.4
+      },
+      {
+        "server": "EvilServer",
+        "network": "Network",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 8086.0,
+        "rounds": 1796.1999999999998
+      },
+      {
+        "server": "EvilServer",
+        "network": "Network",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 12818.0,
+        "rounds": 2833.6000000000004
+      },
+      {
+        "server": "EvilServer",
+        "network": "SlowNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 58127.200000000004,
+        "rounds": 3896.6
+      },
+      {
+        "server": "EvilServer",
+        "network": "SlowNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 77345.2,
+        "rounds": 5202.4
+      },
+      {
+        "server": "EvilServer",
+        "network": "SlowNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 79804.2,
+        "rounds": 5349.6
+      },
+      {
+        "server": "EvilServer",
+        "network": "InsertNetwork",
+        "scheduler": "Scheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 6756163.6,
+        "rounds": 260000.0
+      },
+      {
+        "server": "EvilServer",
+        "network": "InsertNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 2,
+        "failures": 3,
+        "base_seed": 782,
+        "dead_messages": 6754036.4,
+        "rounds": 260000.0
+      },
+      {
+        "server": "EvilServer",
+        "network": "InsertNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 6755932.6,
+        "rounds": 260000.0
+      },
+      {
+        "server": "EvilServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "Scheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 6755936.0,
+        "rounds": 260000.0
+      },
+      {
+        "server": "EvilServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 6745167.2,
+        "rounds": 260000.0
+      },
+      {
+        "server": "EvilServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 6756283.0,
+        "rounds": 260000.0
+      },
+      {
+        "server": "EvilServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "Scheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 4568805.6,
+        "rounds": 260000.0
+      },
+      {
+        "server": "EvilServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 4539156.6,
+        "rounds": 260000.0
+      },
+      {
+        "server": "EvilServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 3452890.5999999996,
+        "rounds": 260000.0
+      },
+      {
+        "server": "EvilServer",
+        "network": "StackNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 3167.7999999999997
+      },
+      {
+        "server": "EvilServer",
+        "network": "StackNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 2519.2
+      },
+      {
+        "server": "EvilServer",
+        "network": "StackNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 639.2
+      },
+      {
+        "server": "RandomServer",
+        "network": "Network",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 6929.6,
+        "rounds": 1545.4
+      },
+      {
+        "server": "RandomServer",
+        "network": "Network",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 8189.0,
+        "rounds": 1818.9999999999998
+      },
+      {
+        "server": "RandomServer",
+        "network": "Network",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 4549.6,
+        "rounds": 1021.0
+      },
+      {
+        "server": "RandomServer",
+        "network": "SlowNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 41955.6,
+        "rounds": 2832.6000000000004
+      },
+      {
+        "server": "RandomServer",
+        "network": "SlowNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 76196.2,
+        "rounds": 5102.2
+      },
+      {
+        "server": "RandomServer",
+        "network": "SlowNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 42522.200000000004,
+        "rounds": 2863.4000000000005
+      },
+      {
+        "server": "RandomServer",
+        "network": "InsertNetwork",
+        "scheduler": "Scheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 6756343.0,
+        "rounds": 260000.0
+      },
+      {
+        "server": "RandomServer",
+        "network": "InsertNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 6755776.800000001,
+        "rounds": 260000.0
+      },
+      {
+        "server": "RandomServer",
+        "network": "InsertNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 6748467.2,
+        "rounds": 260000.0
+      },
+      {
+        "server": "RandomServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "Scheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 5664832.6,
+        "rounds": 260000.0
+      },
+      {
+        "server": "RandomServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 6756217.0,
+        "rounds": 260000.0
+      },
+      {
+        "server": "RandomServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 6754916.0,
+        "rounds": 260000.0
+      },
+      {
+        "server": "RandomServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "Scheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 4651670.800000001,
+        "rounds": 260000.0
+      },
+      {
+        "server": "RandomServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 4676642.4,
+        "rounds": 260000.0
+      },
+      {
+        "server": "RandomServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 5275590.4,
+        "rounds": 260000.0
+      },
+      {
+        "server": "RandomServer",
+        "network": "StackNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 1278.4
+      },
+      {
+        "server": "RandomServer",
+        "network": "StackNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 1692.0000000000002
+      },
+      {
+        "server": "RandomServer",
+        "network": "StackNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 1363.0
+      },
+      {
+        "server": "SilentServer",
+        "network": "Network",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 817.8
+      },
+      {
+        "server": "SilentServer",
+        "network": "Network",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 2425.2
+      },
+      {
+        "server": "SilentServer",
+        "network": "Network",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 686.2
+      },
+      {
+        "server": "SilentServer",
+        "network": "SlowNetwork",
+        "scheduler": "Scheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 6758487.8,
+        "rounds": 260000.0
+      },
+      {
+        "server": "SilentServer",
+        "network": "SlowNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 6758103.0,
+        "rounds": 260000.0
+      },
+      {
+        "server": "SilentServer",
+        "network": "SlowNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 6758586.600000001,
+        "rounds": 260000.0
+      },
+      {
+        "server": "SilentServer",
+        "network": "InsertNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 526.4
+      },
+      {
+        "server": "SilentServer",
+        "network": "InsertNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 1184.4
+      },
+      {
+        "server": "SilentServer",
+        "network": "InsertNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 808.4000000000001
+      },
+      {
+        "server": "SilentServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 1334.8000000000002
+      },
+      {
+        "server": "SilentServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 1353.6
+      },
+      {
+        "server": "SilentServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 2321.8
+      },
+      {
+        "server": "SilentServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 1005.8
+      },
+      {
+        "server": "SilentServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 1504.0000000000002
+      },
+      {
+        "server": "SilentServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 1005.8
+      },
+      {
+        "server": "SilentServer",
+        "network": "StackNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 817.8
+      },
+      {
+        "server": "SilentServer",
+        "network": "StackNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 2425.2
+      },
+      {
+        "server": "SilentServer",
+        "network": "StackNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 686.2
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "Network",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 5730.400000000001,
+        "rounds": 2288.4
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "Network",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 4165.2,
+        "rounds": 1730.0
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "Network",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 7571.200000000001,
+        "rounds": 3036.0
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "SlowNetwork",
+        "scheduler": "Scheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 5386495.6,
+        "rounds": 208186.4
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "SlowNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 3,
+        "failures": 2,
+        "base_seed": 782,
+        "dead_messages": 2713989.0,
+        "rounds": 104818.6
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "SlowNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 6738779.8,
+        "rounds": 260000.0
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "InsertNetwork",
+        "scheduler": "Scheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 6753680.4,
+        "rounds": 260000.0
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "InsertNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 6753143.4,
+        "rounds": 260000.0
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "InsertNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 6754533.800000001,
+        "rounds": 260000.0
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "Scheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 6754025.000000001,
+        "rounds": 260000.0
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 6756038.4,
+        "rounds": 260000.0
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 6755275.199999999,
+        "rounds": 260000.0
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "Scheduler",
+        "successes": 3,
+        "failures": 2,
+        "base_seed": 782,
+        "dead_messages": 2794670.2,
+        "rounds": 156113.2
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 3,
+        "failures": 2,
+        "base_seed": 782,
+        "dead_messages": 2700726.0,
+        "rounds": 104494.6
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 5505987.4,
+        "rounds": 260000.0
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "StackNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 2180.7999999999997
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "StackNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 1306.6
+      },
+      {
+        "server": "UnreliableServer",
+        "network": "StackNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 1823.6
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "Network",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 6682.0,
+        "rounds": 1488.4
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "Network",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 8242.0,
+        "rounds": 1830.4
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "Network",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 6942.0,
+        "rounds": 1545.4
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "SlowNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 89758.8,
+        "rounds": 6033.000000000001
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "SlowNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 84692.0,
+        "rounds": 5677.799999999999
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "SlowNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 54550.2,
+        "rounds": 3676.6
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "InsertNetwork",
+        "scheduler": "Scheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 6755890.4,
+        "rounds": 260000.0
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "InsertNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 6756360.000000001,
+        "rounds": 260000.0
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "InsertNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 6739624.2,
+        "rounds": 260000.0
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "Scheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 4573808.800000001,
+        "rounds": 260000.0
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 6756110.6,
+        "rounds": 260000.0
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "RandomPollNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 6756306.0,
+        "rounds": 260000.0
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "Scheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 3453669.2,
+        "rounds": 260000.0
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 0,
+        "failures": 5,
+        "base_seed": 782,
+        "dead_messages": 5104359.6,
+        "rounds": 260000.0
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "ApproximateNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 1,
+        "failures": 4,
+        "base_seed": 782,
+        "dead_messages": 3683301.2,
+        "rounds": 260000.0
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "StackNetwork",
+        "scheduler": "Scheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 1381.8
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "StackNetwork",
+        "scheduler": "RandomRoundScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 911.8
+      },
+      {
+        "server": "SemirandomServer",
+        "network": "StackNetwork",
+        "scheduler": "EvilFirstScheduler",
+        "successes": 5,
+        "failures": 0,
+        "base_seed": 782,
+        "dead_messages": 0.0,
+        "rounds": 1494.6
+      }
+    ]
+  }
+]
