@@ -15,15 +15,6 @@ def json_string(data):
     return dumps(data, indent=2)
 
 
-# TODO why do random servers cause it to fail?
-# Abstractly, they correspond to a server that occassionally crashes and spews garbage.
-# OH. Subtleties in the state transitions? Because random servers
-# But do pseudorandoms (which track state correctly, but broadcast garbage) have the same problem?
-# Answer: no. But UnreliableServers do, despite keeping track of state correctly.
-# It seems to be annoyingly random. Sometimes they take very little time, other times they take >cutoff.
-# Question: In the times where they take >cutoff,
-
-
 def honest():
     print("Everything Honest")
     n = 6
@@ -40,23 +31,24 @@ def test_server_network_scheduler(
     flip_chance = 0.5
     n = num_servers
     f = math.ceil(n / 5) - 1
-    cutoff_order = 5
+    cutoff_order = 4
     # cutoff = scientific_notation(n, cutoff_order)
-    cutoff = scientific_notation(1, cutoff_order)
+    cutoff = scientific_notation(n, cutoff_order)
 
     def run_test(server, network, scheduler):
-        randomness = random.Random(seed)
         result = dict()
         result["server"] = server.__name__
         result["network"] = network.__name__
         result["scheduler"] = scheduler.__name__
         result["successes"] = 0
         result["failures"] = 0
-        result["seed"] = seed
+        result["base_seed"] = seed
         result["dead_messages"] = 0
         result["rounds"] = 0
         for i in range(repeats):
+            randomness = random.Random(seed + i)
             sys = EvilHotswapSystem(
+            # sys = EvilSystem(
                 n,
                 f,
                 network(n, randomness),
@@ -106,38 +98,26 @@ servers = [
 networks = [
     Network,
     SlowNetwork,
-    # InsertNetwork,
-    # RandomPollNetwork,
+    InsertNetwork,
+    RandomPollNetwork,
     ApproximateNetwork,
+    StackNetwork,
 ]
 
 
-schedulers = [Scheduler , RandomRoundScheduler, EvilFirstScheduler]
-# RandomScheduler
-
-
-# StackNetwork, ShuffleNetwork
+schedulers = [Scheduler, RandomRoundScheduler, EvilFirstScheduler]
 
 seed = int(sys.argv[1]) if len(sys.argv) > 1 else random.randint(0, 1000)
 # test_servers = lambda servers: test_server_network(servers, [Network], seed)
 # test_networks = lambda networks: test_server_network([Server], networks, seed)
 
 test_server_network_scheduler(servers, networks, schedulers, seed, 6, repeats=1)
-# honest()
 
-# test_server_network_scheduler([RandomServer], [Network], [Scheduler], seed=191, num_servers=6, repeats=1)
 
-# So. There are 6 servers, 4 networks, so 24 combos. If we run 25 tests via multitest, that's 600 tests.
+# 6 servers, 6 networks, 3 schedulers
+# total: 108 combinations
+# times 5 values of n -> 540
+# times 5 repeats -> ~2500 datapoints
 
-error_case = (
-    {
-        "server": "RandomServer",
-        "network": "Network",
-        "scheduler": "Scheduler",
-        "successes": 0,
-        "failures": 1,
-        "seed": 191,
-        "dead_messages": 0,
-        "rounds": 0,
-    },
-)
+# for n in [6, 11, 16, 21, 26]:
+#     test_server_network_scheduler(servers, networks, schedulers, seed, n, repeats=5)

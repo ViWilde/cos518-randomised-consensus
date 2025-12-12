@@ -1,7 +1,20 @@
 import random
+from message import Message
 
 
-class Network:
+class AbstractNetwork:
+    def __init__(self, num_servers:int, randomness:random.Random) -> None:
+        pass
+    def send(self, dst:int, payload:Message) -> None:
+        pass
+
+    def send_to_all(self, payload:Message) -> None:
+        pass
+
+    def poll(self, dst:int) -> Message|None:
+        pass
+
+class Network(AbstractNetwork):
     # A very basic network class - the idea is that hostile networks implement the same interface but have more complex operations
     def __init__(self, num_servers, randomness):
         self.n = num_servers

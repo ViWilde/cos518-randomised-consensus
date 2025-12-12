@@ -19,14 +19,8 @@ class System:
         self.evil_ids = set()
         self.randomness = randomness
         self.cutoff = cutoff
-        # self.val_generator = val_generator  # generate values for servers; a mapping from [n] -> (space of possible vals)
-        # self.scheduler = scheduler  # scheduler - a function from a step count c (and the server count n) to telling you which server you should run on that step. So mapping N x n -> [n]
-
-        # Hacks FIXME
-        # self.evil_constructor = evil_constructor  # A constructor for evil servers
 
         self.spawn_servers()
-        # self.print_state()
 
     def print_state(self):
         print([s.x for s in self.servers])
@@ -39,22 +33,20 @@ class System:
             "dead_messages": sum([s.dead_messages for s in self.servers]),
         }
         if self.verify_consensus():
-            # return {"success": True}
             return {"success": True} | data
         elif self.cutoff and self.rounds >= self.cutoff:
-            # return {"success": False}
             return {"success": False} | data
 
         else:
             # Should be unreachable
-            print("ERROR: Failed, somehow")
+            raise Exception("Failed, but not due to cutoff - something is very wrong")
             self.print_state()
             return {
                 "success": False,
                 "steps": self.step_count,
                 "rounds": self.rounds,
                 "messages": self.total_messages(),
-            }|data
+            } | data
 
     def run_undistributed(self):
         while self.should_keep_running():
@@ -66,7 +58,6 @@ class System:
         return self.finish()
 
     def spawn_servers(self):
-        # self.evil_ids = set(self.randomness.sample(range(self.n), self.f))
         self.evil_ids = set()
         for i in range(self.n):
             # Only spawn honest servers - later implementations will have trickier behaviour
@@ -115,10 +106,6 @@ class System:
 
     def total_messages(self):
         return self.network.message_count
-
-    # def last_round(self):
-    #     return self.rounds
-    # return max(self.servers, key=lambda s: s.final_round).final_round
 
 
 class EvilSystem(System):

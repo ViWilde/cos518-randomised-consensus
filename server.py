@@ -34,7 +34,21 @@ class State(Enum):
     WAITING = 7  # For a machine that is done, but in reactive mode -waiting for a message to decide if it should act
 
 
-class Server:
+class AbstractServer:
+    def __init__(
+        self, network=None, id=-1, val=-1, n=0, f=0, randomness=None, *args, **kwargs
+    ) -> None:
+        pass
+
+    @classmethod
+    def from_server(cls, other): # -> AbstractServer
+        return None
+
+    def primitive_step(self) -> None:
+        pass
+
+
+class Server(AbstractServer):
     def __init__(
         self, network=None, id=-1, val=-1, n=0, f=0, randomness=None, *args, **kwargs
     ):
@@ -66,8 +80,7 @@ class Server:
         self.possible_values = [0, 1]
 
         # debug info:
-        self.dead_messages=0
-        
+        self.dead_messages = 0
 
     @classmethod
     def from_server(cls, other):
@@ -224,3 +237,20 @@ class RandomServer(Server):
 class UnknownServer(Server):
     def broadcast(self, msg_type, value):
         return super().broadcast(msg_type, UNKNOWN)
+
+
+def MysteryServerFactory(
+    network=None, id=-1, val=-1, n=0, f=0, randomness=None, *args, **kwargs
+):
+    # Same signature as a server constructor
+    # By the magic of python, we can call it on arguments and it instantiates+returns a server, so it's a drop-in replacement for actual constructors
+    servers = [
+        EvilServer,
+        RandomServer,
+        SilentServer,
+        UnreliableServer,
+        SemirandomServer,
+        MysteryServerFactory
+    ]
+    constructor = randomness.choice(servers)
+    return constructor(network, id, val, n, f, randomness, *args, **kwargs)

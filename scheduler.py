@@ -1,4 +1,20 @@
-class Scheduler:
+from system import System
+import random
+
+class AbstractScheduler:
+    def __init__(self, n:int, randomness:random.Random)->None:
+        pass
+
+    def next_server(self, system:System)->int:
+        pass
+
+    def on_new_round(self, system:System)->None:
+        pass
+
+
+
+
+class Scheduler(AbstractScheduler):
     # The scheduler logic
     # Return the next server that should step
     def __init__(self, n, randomness):
