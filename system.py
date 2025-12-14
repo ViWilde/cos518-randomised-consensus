@@ -28,7 +28,7 @@ class System:
     def finish(self):
         data = {
             # "steps": self.step_count,
-            # "messages": self.total_messages(),
+            "messages": self.total_messages(),
             "rounds": self.rounds,
             "dead_messages": sum([s.dead_messages for s in self.servers]),
         }

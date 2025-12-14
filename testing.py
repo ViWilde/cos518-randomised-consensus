@@ -44,6 +44,7 @@ def test_server_network_scheduler(
         # result["base_seed"] = seed
         # result["dead_messages"] = 0
         result["rounds"] = 0
+        result["messages"] = 0
         for i in range(repeats):
             randomness = random.Random(seed + i)
             sys = EvilHotswapSystem(
@@ -61,6 +62,7 @@ def test_server_network_scheduler(
             x = sys.run_undistributed()
             # Rounds and dead_messages are averaged across repeats
             result["rounds"] += x["rounds"] / repeats
+            result["messages"] += x["messages"] / repeats
             # result["dead_messages"] += x["dead_messages"] / repeats
             if x["success"]:
                 result["successes"] = result["successes"] + 1
@@ -78,7 +80,7 @@ def test_server_network_scheduler(
 
 def multitest(num, servers, networks, schedulers):
     seed = random.randint(1, 10000)
-    test_server_network(servers, networks, schedulers, seed, num)
+    test_server_network_scheduler(servers, networks, schedulers, seed, num)
 
 
 servers = [
